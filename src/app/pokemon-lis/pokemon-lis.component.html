@@ -1,1 +1,6 @@
-<app-pokemon-card *ngFor="let pokemon of pokemons"></app-pokemon-card> <!--ngFor vai rodar uma vez pra cada item da lista -->
+<app-pokemon-card *ngFor="let pokemon of pokemons" [pokemon]="pokemon"></app-pokemon-card> <!--ngFor vai rodar uma vez pra cada item da lista -->
+
+<!-- <div *ngFor="let pokemon of pokemons">
+    Pokemon: {{pokemon}}
+</div> -->
+

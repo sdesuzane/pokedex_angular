@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./pokemon-lis.component.sass']
 })
 export class PokemonLisComponent {
-  pokemons = [0,0,0,0,0];
+  pokemons = ['bulbaasaur','Ivysaur', 'pikachu'];
 
 }
