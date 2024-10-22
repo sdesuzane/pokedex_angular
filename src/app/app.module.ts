@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { PokemonLisComponent } from './pokemon-lis/pokemon-lis.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+import { PokemonService } from './services/pokemon.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,9 +16,10 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
     PokemonCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [PokemonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

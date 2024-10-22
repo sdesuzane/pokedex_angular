@@ -7,13 +7,13 @@ import { Component, Input } from '@angular/core';
 })
 export class PokemonCardComponent {
   @Input()
-  pokemon!: string;
+  pokemon?: string;
 
   @Input()
-  numero!: number;
+  numero?: number;
 
   pegarImagemPokemon() {
-    const numeroFormatado = this.leadingZero(this.numero);
+    const numeroFormatado = this.leadingZero(Number(this.numero));
     return `https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/${numeroFormatado}.png`;
     
   }
